@@ -1,6 +1,6 @@
 # .github/workflows/deploy.yml
 
-name: deploy
+name: CI-CD
 on:
   pull_request:
     branches:
