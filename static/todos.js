@@ -187,12 +187,6 @@ const Todos = () => {
         todos = await todos.json();
         setItems(todos.items.sort((a, b) => a.createdAt - b.createdAt));
       }
-
-      let fake = await fetch(`/api/v1/fakes`);
-
-      fake = await fake.json();
-
-      console.log(`Fakes message: ${fake.message}`);
     } catch (e) {}
     setLoading(false);
   };
